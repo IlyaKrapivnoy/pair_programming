@@ -18,8 +18,12 @@ const Students = ({ isLogged, setIsLogged }) => {
     return (
         <div className='w-10/12 bg-gray-100'>
             <Header
-                title='Students'
-                description='You can see the list of your students here'
+                title={isLogged ? 'Add Students' : 'Try it now'}
+                description={
+                    isLogged
+                        ? 'You can see the list of your students here'
+                        : 'The easiest way to master your work routine'
+                }
                 isLogged={isLogged}
                 setIsLogged={setIsLogged}
             />
