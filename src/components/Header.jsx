@@ -18,9 +18,11 @@ const Header = ({ title, description }) => {
                     </div>
 
                     {isLoggedIn ? (
-                        <Button color='inherit'>Log Out</Button>
+                        <Button variant='outlined' color='inherit'>
+                            Log Out
+                        </Button>
                     ) : (
-                        <Button color='inherit'>Log In</Button>
+                        <Button variant='contained'>Log In</Button>
                     )}
                 </Toolbar>
             </AppBar>
