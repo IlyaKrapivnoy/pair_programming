@@ -11,7 +11,7 @@ function App() {
     return (
         <div className='flex'>
             <Router>
-                <Sidebar />
+                <Sidebar isLogged={isLogged} setIsLogged={setIsLogged} />
                 <Switch>
                     <Route exact path='/'>
                         <Students
