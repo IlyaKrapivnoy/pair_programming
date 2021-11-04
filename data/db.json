@@ -1,4 +1,32 @@
 {
-    "name": "Tom",
-    "age": 20
+    "students": [
+        {
+            "id": 1,
+            "name": "Tom",
+            "age": 20,
+            "level": "beginner",
+            "moneyPerHour": "150UAH"
+        },
+        {
+            "id": 2,
+            "name": "Rich",
+            "age": 26,
+            "level": "beginner",
+            "moneyPerHour": "150UAH"
+        },
+        {
+            "id": 3,
+            "name": "Rich",
+            "age": 32,
+            "level": "intermediate",
+            "moneyPerHour": "250UAH"
+        },
+        {
+            "id": 4,
+            "name": "Bart",
+            "age": 29,
+            "level": "advanced",
+            "moneyPerHour": "350UAH"
+        }
+    ]
 }
