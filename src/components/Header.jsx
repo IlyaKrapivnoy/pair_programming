@@ -1,7 +1,9 @@
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import { useState } from 'react';
 
 const Header = ({ title, description }) => {
-    const isLoggedIn = true;
+    // const isLogged = true;
+    const [isLogged, setIsLogged] = useState(false);
 
     return (
         <div>
@@ -12,17 +14,30 @@ const Header = ({ title, description }) => {
                 >
                     <div className=''>
                         <Typography variant='h6'>{title}</Typography>
-                        <Typography variant='caption' display='block'>
+                        <Typography
+                            variant='caption'
+                            display='block'
+                            className='text-gray-200'
+                        >
                             {description}
                         </Typography>
                     </div>
 
-                    {isLoggedIn ? (
-                        <Button variant='outlined' color='inherit'>
+                    {isLogged ? (
+                        <Button
+                            variant='outlined'
+                            color='inherit'
+                            onClick={() => setIsLogged(!isLogged)}
+                        >
                             Log Out
                         </Button>
                     ) : (
-                        <Button variant='contained'>Log In</Button>
+                        <Button
+                            variant='contained'
+                            onClick={() => setIsLogged(!isLogged)}
+                        >
+                            Log In
+                        </Button>
                     )}
                 </Toolbar>
             </AppBar>

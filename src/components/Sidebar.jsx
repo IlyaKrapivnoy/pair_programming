@@ -10,6 +10,14 @@ const Sidebar = () => {
                     IT School
                 </Typography>
             </div>
+            <div className='p-4 border-opacity-50 border-b bg-gray-700'>
+                <Typography variant='subtitle1' className='text-gray-50'>
+                    Tomas Edison
+                </Typography>
+                <Typography variant='caption' className='text-gray-200'>
+                    Teacher
+                </Typography>
+            </div>
             <div className='p-4 border-opacity-50 border-b'>
                 <Typography
                     variant='subtitle1'
