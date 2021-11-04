@@ -1,12 +1,15 @@
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import cn from 'classnames';
 
 const Header = ({ title, description, isLogged, setIsLogged }) => {
     return (
         <div>
             <AppBar position='static'>
                 <Toolbar
-                    className='flex justify-between h-20'
-                    style={{ backgroundColor: '#009be5' }}
+                    className={cn(
+                        'flex justify-between h-20',
+                        isLogged ? 'bg-blue-400' : 'bg-red-400'
+                    )}
                 >
                     <div className=''>
                         <Typography variant='h6'>{title}</Typography>
