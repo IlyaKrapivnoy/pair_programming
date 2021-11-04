@@ -4,7 +4,7 @@ import { SupervisorAccount, Storage } from '@material-ui/icons';
 
 const Sidebar = () => {
     return (
-        <div className='w-3/12 h-screen bg-gray-800'>
+        <div className='w-2/12 h-screen bg-gray-800'>
             <div className='p-4 border-opacity-50 border-b bg-gray-700'>
                 <Typography variant='h5' className='text-gray-50'>
                     IT School
