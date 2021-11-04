@@ -31,6 +31,22 @@
             "level": "advanced",
             "moneyPerHour": "350UAH",
             "subject": "Bootstrap"
+        },
+        {
+            "id": 5,
+            "name": "Nick",
+            "age": 32,
+            "level": "intermediate",
+            "moneyPerHour": "250UAH",
+            "subject": "React JS"
+        },
+        {
+            "id": 6,
+            "name": "David",
+            "age": 39,
+            "level": "advanced",
+            "moneyPerHour": "350UAH",
+            "subject": "React JS"
         }
     ]
 }
