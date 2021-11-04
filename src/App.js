@@ -6,7 +6,7 @@ import AddStudents from './components/AddStudents';
 
 function App() {
     return (
-        <div className=''>
+        <div className='flex'>
             <Router>
                 <Sidebar />
                 <Switch>
