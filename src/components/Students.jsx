@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Header from './Header';
 import StudentsList from './StudentsList';
 
-const Students = () => {
+const Students = ({ isLogged, setIsLogged }) => {
     const [students, setStudents] = useState(null);
 
     useEffect(() => {
@@ -20,9 +20,17 @@ const Students = () => {
             <Header
                 title='Students'
                 description='You can see the list of your students here'
+                isLogged={isLogged}
+                setIsLogged={setIsLogged}
             />
 
-            {students && <StudentsList students={students} />}
+            {isLogged ? (
+                students && <StudentsList students={students} />
+            ) : (
+                <div className='flex justify-center items-center mt-20'>
+                    To see the content log in, please
+                </div>
+            )}
         </div>
     );
 };

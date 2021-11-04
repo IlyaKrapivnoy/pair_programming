@@ -6,9 +6,9 @@ import {
     Typography,
     Button,
 } from '@material-ui/core';
-import { Close, RemoveCircleOutline } from '@material-ui/icons';
+import { RemoveCircleOutline } from '@material-ui/icons';
 
-const StudentsList = ({ students }) => {
+const StudentsList = ({ students, setIsLogged, isLogged }) => {
     return (
         <div
             style={{

@@ -1,9 +1,6 @@
 import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
-import { useState } from 'react';
 
-const Header = ({ title, description }) => {
-    const [isLogged, setIsLogged] = useState(false);
-
+const Header = ({ title, description, isLogged, setIsLogged }) => {
     return (
         <div>
             <AppBar position='static'>
