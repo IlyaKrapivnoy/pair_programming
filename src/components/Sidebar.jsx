@@ -28,10 +28,6 @@ const Sidebar = ({ isLogged, setIsLogged }) => {
                             <Storage className='mr-2 my-1' />
                             <Link to='/add_students'>Add Students</Link>
                         </li>
-                        <li className='flex items-center'>
-                            <Storage className='mr-2 my-1' />
-                            <Link to='/random_topic'>Random Topic</Link>
-                        </li>
                     </ul>
                 </div>
             ) : (
