@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar';
 import Students from './components/Students';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AddStudents from './components/AddStudents';
-import { useState } from 'react';
+import {useState} from 'react';
 
 function App() {
     const [isLogged, setIsLogged] = useState(false);
